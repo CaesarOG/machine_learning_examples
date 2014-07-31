@@ -1,10 +1,5 @@
 # https://deeplearningcourses.com/c/artificial-intelligence-reinforcement-learning-in-python
 # https://www.udemy.com/artificial-intelligence-reinforcement-learning-in-python
-from __future__ import print_function, division
-from builtins import range
-# Note: you may need to update your version of future
-# sudo pip install -U future
-
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -28,7 +23,7 @@ def run_experiment(m1, m2, m3, eps, N):
 
   data = np.empty(N)
   
-  for i in range(N):
+  for i in xrange(N):
     # epsilon greedy
     p = np.random.random()
     if p < eps:
