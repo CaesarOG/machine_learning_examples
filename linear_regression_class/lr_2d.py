@@ -42,4 +42,4 @@ Yhat = np.dot(X, w)
 d1 = Y - Yhat
 d2 = Y - Y.mean()
 r2 = 1 - d1.dot(d1) / d2.dot(d2)
-print "the r-squared is:", r2
+print ("the r-squared is:", r2)
